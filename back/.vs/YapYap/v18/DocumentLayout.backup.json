@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F5C275A-01CA-4DE4-AB5E-4030379E208F}|YapYap.Core\\YapYap.Core.csproj|c:\\users\\lamam\\desktop\\pro\\pro\\yapyap\\back\\yapyap.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F5C275A-01CA-4DE4-AB5E-4030379E208F}|YapYap.Core\\YapYap.Core.csproj|solutionrelative:yapyap.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCAC0001-DA7F-444E-920C-45EDD3E368B8}|YapYap.Api\\YapYap.Api.csproj|c:\\users\\lamam\\desktop\\pro\\pro\\yapyap\\back\\yapyap.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCAC0001-DA7F-444E-920C-45EDD3E368B8}|YapYap.Api\\YapYap.Api.csproj|solutionrelative:yapyap.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5C275A-01CA-4DE4-AB5E-4030379E208F}|YapYap.Core\\YapYap.Core.csproj|c:\\users\\lamam\\desktop\\pro\\pro\\yapyap\\back\\yapyap.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5C275A-01CA-4DE4-AB5E-4030379E208F}|YapYap.Core\\YapYap.Core.csproj|solutionrelative:yapyap.core\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCAC0001-DA7F-444E-920C-45EDD3E368B8}|YapYap.Api\\YapYap.Api.csproj|c:\\users\\lamam\\desktop\\pro\\pro\\yapyap\\back\\yapyap.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\Models\\ChatMessage.cs",
               "RelativeDocumentMoniker": "YapYap.Core\\Models\\ChatMessage.cs",
               "ToolTip": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\Models\\ChatMessage.cs",
               "RelativeToolTip": "YapYap.Core\\Models\\ChatMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T17:55:21.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Api\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "YapYap.Api\\Hubs\\ChatHub.cs",
               "ToolTip": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Api\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "YapYap.Api\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T17:55:15.391Z",
               "EditorCaption": ""
