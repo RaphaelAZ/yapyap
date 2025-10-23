@@ -1,6 +1,0 @@
-@YapYap.Api_HostAddress = http://localhost:5234
-
-GET {{YapYap.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

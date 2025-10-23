@@ -1,2 +1,4 @@
-<input [(ngModel)]="message" placeholder="Message..." />
-<button (click)="send()">Envoyer</button>
+<form [formGroup]="form" (ngSubmit)="send()">
+  <input formControlName="message" placeholder="Message..." />
+  <button type="submit">Envoyer</button>
+</form>

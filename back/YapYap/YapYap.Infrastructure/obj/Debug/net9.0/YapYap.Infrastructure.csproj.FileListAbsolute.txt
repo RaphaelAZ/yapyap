@@ -1,0 +1,6 @@
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.AssemblyInfo.cs
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\lamam\Desktop\PRO\PRO\yapyap\back\YapYap\YapYap.Infrastructure\obj\Debug\net9.0\YapYap.Infrastructure.sourcelink.json
