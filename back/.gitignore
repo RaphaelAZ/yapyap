@@ -1,0 +1,51 @@
+# Build output
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+*.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+.nuget/
+# Uncomment if you have local NuGet config
+# nuget.config
+
+# Node / Angular
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Others
+*.swp
+*.tmp
+*.bak
+
+# Angular environment files
+src/environments/*.ts
