@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj": {}
+    "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj": {
+    "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
+        "projectUniqueName": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
         "projectName": "YapYap",
-        "projectPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
+        "projectPath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
         "packagesPath": "C:\\Users\\lamam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\obj\\",
+        "outputPath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

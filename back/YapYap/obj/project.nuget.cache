@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lrQV45E6BEM=",
+  "dgSpecHash": "0eH3t+ebe6k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
+  "projectFilePath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap\\YapYap.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lamam\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\lamam\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
