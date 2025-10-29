@@ -2,14 +2,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using YapYap.Api.Hubs;
-using YapYap.Infrastructure.Repositories;
+using YapYap.Infrastructure;
+using YapYap.YapYap.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "MaCleSecreteSuperLongue";
 
-builder.Services.AddSingleton<UserRepository>();
-builder.Services.AddSingleton<MessageRepository>();
+builder.Services.AddSingleton<MongoContext>(sp => new MongoContext("mongodb://localhost:27017", "YapYap"));
+builder.Services.AddInfrastructure();
 
 builder.Services.AddCors(options =>
 {

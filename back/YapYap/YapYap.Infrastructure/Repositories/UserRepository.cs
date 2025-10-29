@@ -6,11 +6,9 @@ public class UserRepository
 {
     private readonly IMongoCollection<User> _users;
 
-    public UserRepository(IConfiguration config)
+    public UserRepository(MongoContext context)
     {
-        var client = new MongoClient(config.GetConnectionString("MongoDb"));
-        var database = client.GetDatabase("YapYapDb");
-        _users = database.GetCollection<User>("Users");
+        _users = context._database.GetCollection<User>("Users");
     }
 
     public async Task<User> CreateUserAsync(string username, string password)

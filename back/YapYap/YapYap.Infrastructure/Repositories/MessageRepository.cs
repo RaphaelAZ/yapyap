@@ -8,7 +8,7 @@ namespace YapYap.Infrastructure.Repositories
         private readonly IMongoCollection<ChatMessage> _messages;
         public MessageRepository(MongoContext context)
         {
-            _messages = context.Messages;
+            _messages = context._database.GetCollection<ChatMessage>("Messages");
         }
 
         public async Task<IEnumerable<ChatMessage>> GetMessagesAsync(string user1, string user2)
