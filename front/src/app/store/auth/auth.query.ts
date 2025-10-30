@@ -1,7 +1,8 @@
-import { AuthState, authStore } from "./auth.store";
+import { select } from '@ngneat/elf';
+import { authStore } from "./auth.store";
 
 export const authQuery = {
-  isLoading: authStore.query((state: AuthState) => state.loading),
-  getUser: authStore.query((state: AuthState) => state.user),
-  isLoggedIn: authStore.query((state: AuthState) => !!state.user?.id),
-}
+  user$: authStore.pipe(select(state => state.user)),
+  loading$: authStore.pipe(select(state => state.loading)),
+  isLoggedIn$: authStore.pipe(select(state => !!state.user?.token))
+};

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YapYap.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85e9046439835bf88893db7b7a153e13d467b54b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adbad39a2b148e6941c5caa4944378defba85ea5")]
 [assembly: System.Reflection.AssemblyProductAttribute("YapYap.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YapYap.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

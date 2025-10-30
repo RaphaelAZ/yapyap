@@ -17,6 +17,7 @@
       "@appModels/*": ["./src/app/models/index.ts"],
       "@appComponents/*": ["./src/app/components/*"],
       "@appServices/*": ["./src/app/services/*"],
+      "@appStore/*": ["./src/app/store/*"],
       "@appUtils/*": ["./src/app/utils/*"],
       "@appAssets/*": ["./src/assets/*"],
       "@environments/*": ["./src/environments/*"],

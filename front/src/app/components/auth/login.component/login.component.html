@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="tryLogin()">
+  <yap-input-field
+    label="Nom d'utilisateur"
+    label="Username"
+    formControlName="username">
+  </yap-input-field>
+
+  <yap-input-field
+    label="Mot de passe"
+    formControlName="password"
+    type="password">
+  </yap-input-field>
+
+  <yap-button type="submit" [disabled]="form.invalid">
+    Se connecter
+  </yap-button>
+</form>

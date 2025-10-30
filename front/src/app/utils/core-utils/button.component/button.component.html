@@ -1,0 +1,7 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  [ngClass]="[variant, fullWidth ? 'full-width' : '']"
+  (click)="onClick()">
+  <ng-content></ng-content>
+</button>
