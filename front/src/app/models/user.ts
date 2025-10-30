@@ -1,8 +1,10 @@
 export interface User {
   id: string;
   username: string;
-  email: string;
-  avatar?: string;
-  isOnline: boolean;
-  lastSeen?: Date;
+  token: string;
+}
+
+export interface UserCredentials {
+  username: string;
+  password: string;
 }
