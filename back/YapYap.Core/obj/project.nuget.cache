@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TdrZsAzkuwo=",
+  "dgSpecHash": "dDoNf7Ggwp0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
+  "projectFilePath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lamam\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\lamam\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

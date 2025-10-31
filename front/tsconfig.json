@@ -19,6 +19,7 @@
       "@appServices/*": ["./src/app/services/*"],
       "@appStore/*": ["./src/app/store/*"],
       "@appUtils/*": ["./src/app/utils/*"],
+      "@appGuards/*": ["./src/app/guard/*"],
       "@appAssets/*": ["./src/assets/*"],
       "@environments/*": ["./src/environments/*"],
     }

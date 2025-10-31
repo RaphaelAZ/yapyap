@@ -4,10 +4,12 @@ import { authStore } from './auth.store';
 import { environment } from '@environments/environment';
 import { User } from '@appModels/*';
 import { map } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private http = inject(HttpClient);
+  private router = inject(Router);
 
   login(username: string, password: string) {
     authStore.update(state => ({ ...state, loading: true }));
@@ -19,6 +21,7 @@ export class AuthService {
             user: result,
             loading: false
           }));
+          this.router.navigate(['/chat', "6904a5b712078bcd7da52827"]);
         } else {
           authStore.update(state => ({ ...state, loading: false }));
           console.error('Connexion échouée');
@@ -42,6 +45,7 @@ export class AuthService {
               user: result,
               loading: false
             }));
+            this.router.navigate(['/chat']);
           } else {
             authStore.update(state => ({ ...state, loading: false }));
             throw new Error('Inscription échouée');

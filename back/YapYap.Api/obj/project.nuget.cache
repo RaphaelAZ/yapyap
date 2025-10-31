@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dx4P1Mqgpr8=",
+  "dgSpecHash": "ah3FwjUsfYw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
+  "projectFilePath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lamam\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\lamam\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
@@ -28,9 +28,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "Le PackageReference Microsoft.AspNetCore.SignalR ne sera pas supprimé. Envisagez de retirer ce package de vos dépendances, car il est probablement inutile.",
-      "projectPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
+      "projectPath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
+      "filePath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Api\\YapYap.Api.csproj",
       "libraryId": "Microsoft.AspNetCore.SignalR",
       "targetGraphs": [
         "net10.0"

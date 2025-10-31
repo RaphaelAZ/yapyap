@@ -4,6 +4,7 @@ import { InputFieldComponent } from "@appUtils/form-utils/input-field.component/
 import { ButtonComponent } from "@appUtils/core-utils/button.component/button.component";
 import { AuthService } from '@appStore/auth/auth.service';
 import { authQuery } from '@appStore/auth/auth.query';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login.component',

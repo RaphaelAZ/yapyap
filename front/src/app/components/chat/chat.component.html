@@ -1,3 +1,14 @@
+<div class="messages">
+  @for (m of chatService.messages$ | async; track m.id) {
+    <yap-message
+      [message]="m"
+      [currentUserId]="((authQuery.user$ | async)?.userId) || null"
+      (reply)="onReply($event)"
+      (remove)="onRemove($event)">
+    </yap-message>
+  }
+</div>
+
 <form [formGroup]="form" (ngSubmit)="send()">
   <input formControlName="message" placeholder="Message..." />
   <button type="submit">Envoyer</button>
