@@ -1,5 +1,6 @@
 export interface Friend {
-  id: string;
-  username: string;
-  status: 'pending' | 'accepted' | 'blocked';
+  accepted: boolean
+  friendId: string
+  friendRequestId: string
+  friendUsername: string
 }

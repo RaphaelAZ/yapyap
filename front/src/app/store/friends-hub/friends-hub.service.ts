@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { upsertEntities, updateEntities } from '@ngneat/elf-entities';
+import { inject, Injectable } from '@angular/core';
 import { friendsStore } from './friends-hub.store';
 import { Friend } from '@appModels/*';
 import { environment } from '@environments/environment';
@@ -8,20 +7,29 @@ import { authQuery } from '@appStore/auth/auth.query';
 
 @Injectable({ providedIn: 'root' })
 export class FriendsService {
-  constructor(private http: HttpClient) {}
+  private httpClient = inject(HttpClient);
+  token = authQuery.user?.token;
+  header = new HttpHeaders().set('Authorization', `Bearer ${this.token}`);
 
   loadFriends() {
-    const token = authQuery.user?.token;
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    friendsStore.update(state => ({ ...state, loading: true }));
 
-    return this.http.get<Friend[]>(`${environment.apiUrl}/api/friends`, { headers }).subscribe(friends =>
-      friendsStore.update(upsertEntities(friends))
-    );
+    this.httpClient.get<Friend[]>(`${environment.apiUrl}/api/friends`, { headers: this.header }).subscribe({
+      next: (friends) => {
+        friendsStore.update(state => ({ ...state, friends, loading: false }));
+      },
+      error: () => friendsStore.update(state => ({ ...state, loading: false }))
+    });
   }
 
-  acceptFriend(friendId: string) {
-    friendsStore.update(
-      updateEntities(friendId, { status: 'accepted' })
-    );
+  loadPendingRequests() {
+    friendsStore.update(state => ({ ...state, loading: true }));
+
+    this.httpClient.get<Friend[]>(`${environment.apiUrl}/api/friends/requests`, { headers: this.header }).subscribe({
+      next: (pendingRequests) => {
+        friendsStore.update(state => ({ ...state, pendingRequests, loading: false }));
+      },
+      error: () => friendsStore.update(state => ({ ...state, loading: false }))
+    });
   }
 }

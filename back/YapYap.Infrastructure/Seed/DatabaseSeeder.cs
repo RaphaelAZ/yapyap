@@ -9,9 +9,9 @@ public class DatabaseSeeder
     {
         var users = new List<User>
         {
-            new User { Username = "Alice", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
-            new User { Username = "Bob", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
-            new User { Username = "Charlie", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
+            new User { Id = "6908f6fe6c38b688d0c64e93", Username = "Alice", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
+            new User { Id = "6908f6fe6c38b688d0c64e94", Username = "Bob", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
+            new User { Id = "6908f6fe6c38b688d0c64e95", Username = "Charlie", PasswordHash = BCrypt.Net.BCrypt.HashPassword("1234") },
         };
         
         var usersCollection = context._database.GetCollection<User>("Users");

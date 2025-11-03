@@ -1,1 +1,27 @@
+<div class="friends-container">
+  <h2>Amis</h2>
+  @if (friendsQuery.loading$ | async) {
+    <div class="loading">Chargement...</div>
+  }
 
+  <ul class="friends-list">
+    @for (friend of friendsQuery.friends$ | async; track friend.friendId) {
+      <li class="friend-item">
+        <!-- <div class="avatar">{{ friend.friendUsername[0] }}</div> --> <!-- Avatar désactivé pour l'instant -->
+        <div class="username">{{ friend.friendUsername }}</div>
+        <yap-button label="Message" class="message-btn" (clicked)="goToChat(friend.friendId)"></yap-button>
+      </li>
+    }
+  </ul>
+
+  <h2>Requêtes en attente</h2>
+  <ul class="friends-list">
+    @for (request of friendsQuery.pendingRequests$ | async; track request.friendId) {
+      <li class="friend-item pending">
+        <!-- <div class="avatar">{{ request.friendUsername[0] }}</div> --> <!-- Avatar désactivé pour l'instant -->
+        <div class="username">{{ request.friendUsername }}</div>
+        <button class="accept-btn">Accepter</button>
+      </li>
+    }
+  </ul>
+</div>

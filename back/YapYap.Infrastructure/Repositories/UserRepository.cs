@@ -37,6 +37,14 @@ public class UserRepository
     {
         return await _users.Find(u => u.Id == id).FirstOrDefaultAsync();
     }
+    
+    public async Task<List<User>> GetUsersByIds(List<string> ids)
+    {
+        if (ids == null || !ids.Any())
+            return new List<User>();
+
+        return await _users.Find(u => ids.Contains(u.Id)).ToListAsync();
+    }
 
     public bool VerifyPassword(User user, string password)
     {

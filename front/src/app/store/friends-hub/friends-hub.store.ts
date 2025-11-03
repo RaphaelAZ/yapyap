@@ -1,8 +1,17 @@
-import { Friend } from '@appModels/*';
-import { createStore } from '@ngneat/elf';
-import { withEntities } from '@ngneat/elf-entities';
+import { createStore, withProps } from '@ngneat/elf';
+import { Friend } from '@appModels/friend.model';
+
+export interface FriendsState {
+  friends: Friend[];
+  pendingRequests: Friend[];
+  loading: boolean;
+}
 
 export const friendsStore = createStore(
   { name: 'friends' },
-  withEntities<Friend>()
+  withProps<FriendsState>({
+    friends: [],
+    pendingRequests: [],
+    loading: false
+  })
 );

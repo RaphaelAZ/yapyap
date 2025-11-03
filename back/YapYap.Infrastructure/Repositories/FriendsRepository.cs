@@ -14,15 +14,9 @@ namespace YapYap.Infrastructure.Repositories
 
         public async Task<List<FriendRequest>> GetUserFriendsAsync(string userId)
         {
-            var filter = Builders<FriendRequest>.Filter.And(
-                Builders<FriendRequest>.Filter.Eq(r => r.Accepted, true),
-                Builders<FriendRequest>.Filter.Or(
-                    Builders<FriendRequest>.Filter.Eq(r => r.SenderId, userId),
-                    Builders<FriendRequest>.Filter.Eq(r => r.ReceiverId, userId)
-                )
-            );
-
-            return await _friendsRequests.Find(filter).ToListAsync();
+            return await _friendsRequests
+                .Find(r => (r.SenderId == userId || r.ReceiverId == userId) && r.Accepted)
+                .ToListAsync();
         }
 
         public async Task<List<FriendRequest>> GetPendingRequestsAsync(string userId)
