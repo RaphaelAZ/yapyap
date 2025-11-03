@@ -18,7 +18,6 @@ public class ChatHub : Hub
     public override async Task OnConnectedAsync()
     {
         var userId = Context.User?.FindFirst("id")?.Value;
-        Console.WriteLine($"✅ User connected: {userId}");
         await base.OnConnectedAsync();
     }
 

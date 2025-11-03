@@ -1,5 +1,7 @@
+using MongoDB.Driver;
 using YapYap.Api.Extensions;
-using YapYap.Api.Hubs;
+using YapYap.Infrastructure;
+using YapYap.Infrastructure.Seed;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,7 @@ builder.Services.AddInfrastructure();
 builder.Services.AddAppCors();
 builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.AddControllers();
-builder.Services.AddSignalR();
+builder.Services.AddAppSignalR();
 
 var app = builder.Build();
 
@@ -16,6 +18,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<ChatHub>("/api/chatHub");
+
+var mongoContext = app.Services.GetRequiredService<MongoContext>();
+await DatabaseSeeder.SeedAsync(mongoContext);
+
+app.MapAppHubs();
 
 app.Run();

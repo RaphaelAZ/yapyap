@@ -18,6 +18,7 @@ namespace YapYap.Api.Extensions
             });
             services.AddSingleton<UserRepository>();
             services.AddSingleton<MessageRepository>();
+            services.AddSingleton<FriendsRepository>();
             services.AddSingleton<IJwtService, JwtService>();
 
             return services;

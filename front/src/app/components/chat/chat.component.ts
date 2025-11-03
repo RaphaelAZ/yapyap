@@ -1,11 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ChatService } from '../../store/chat/chat.service';
-import { BehaviorSubject, firstValueFrom, Observable } from 'rxjs';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { authQuery } from '@appStore/auth/auth.query';
 import { MessageComponent } from "@appUtils/core-utils/message.component/message.component";
-import { Message } from '@appModels/*';
+import { ChatService } from '@appStore/chat/chat.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
@@ -17,29 +16,27 @@ import { Message } from '@appModels/*';
   templateUrl: 'chat.component.html',
 })
 export class ChatComponent implements OnInit {
+  protected chatService = inject(ChatService);
+  protected fb = inject(FormBuilder);
+  private route = inject(ActivatedRoute);
+
   form: FormGroup;
   authQuery = authQuery;
 
-  constructor(
-    protected fb: FormBuilder,
-    protected chatService: ChatService
-  ) {
+  constructor() {
     this.form = this.fb.group({
       message: ['']
     });
   }
 
   ngOnInit() {
-    this.chatService.initConnection();
+    this.chatService.joinConversation(this.route.snapshot.paramMap.get('otherId')!);
   }
 
   send() {
     const content = this.form.get('message')?.value;
-    firstValueFrom(authQuery.user$).then(user => {
-      const senderId = user!.userId;
-      this.chatService.sendMessage('', content);
-      this.form.reset();
-    });
+    this.chatService.sendMessage('', content);
+    this.form.reset();
   }
 
   onReply(message: any) {
