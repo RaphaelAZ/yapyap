@@ -32,6 +32,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FriendsController",
+    "Method": "GetMyFriends",
+    "RelativePath": "api/Friends",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FriendsController",
+    "Method": "AcceptFriendRequest",
+    "RelativePath": "api/Friends/accept/{requestId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FriendsController",
+    "Method": "GetPendingRequests",
+    "RelativePath": "api/Friends/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FriendsController",
+    "Method": "SendFriendRequest",
+    "RelativePath": "api/Friends/request/{receiverId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receiverId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "YapYap.Api.Controllers.MessagesController",
     "Method": "GetConversation",
     "RelativePath": "api/Messages/{otherUserId}",

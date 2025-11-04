@@ -9,7 +9,9 @@
       <li class="friend-item">
         <!-- <div class="avatar">{{ friend.friendUsername[0] }}</div> --> <!-- Avatar désactivé pour l'instant -->
         <div class="username">{{ friend.friendUsername }}</div>
-        <yap-button label="Message" class="message-btn" (clicked)="goToChat(friend.friendId)"></yap-button>
+        <yap-button label="Message" class="message-btn" (clicked)="goToChat(friend.friendId)" size="sm">
+          <mat-icon aria-label="goto-chat-icon" fontIcon="chevron_right"></mat-icon>
+        </yap-button>
       </li>
     }
   </ul>
@@ -20,7 +22,9 @@
       <li class="friend-item pending">
         <!-- <div class="avatar">{{ request.friendUsername[0] }}</div> --> <!-- Avatar désactivé pour l'instant -->
         <div class="username">{{ request.friendUsername }}</div>
-        <button class="accept-btn">Accepter</button>
+        <yap-button label="Refuser" class="decline-btn" (clicked)="declineRequest(request.friendId)" size="sm">
+          <mat-icon aria-label="decline-request-icon" fontIcon="close"></mat-icon>
+        </yap-button>
       </li>
     }
   </ul>

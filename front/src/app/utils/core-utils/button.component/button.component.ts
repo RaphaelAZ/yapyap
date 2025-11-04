@@ -12,6 +12,7 @@ export class ButtonComponent {
   @Input() disabled: boolean = false;
   @Input() variant: 'primary' | 'secondary' | 'danger' = 'primary';
   @Input() fullWidth: boolean = false;
+  @Input() size: 'sm' | 'md' | 'lg' = 'md';
 
   @Output() clicked = new EventEmitter<void>();
 

@@ -30,12 +30,12 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.chatService.joinConversation(this.route.snapshot.paramMap.get('otherId')!);
+    this.chatService.joinConversation(this.route.snapshot.paramMap.get('id')!);
   }
 
   send() {
     const content = this.form.get('message')?.value;
-    this.chatService.sendMessage('', content);
+    this.chatService.sendMessage(this.route.snapshot.paramMap.get('id')!, content);
     this.form.reset();
   }
 

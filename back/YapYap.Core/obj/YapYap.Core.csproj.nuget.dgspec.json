@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj": {}
+    "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj": {
+    "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
+        "projectUniqueName": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
         "projectName": "YapYap.Core",
-        "projectPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
+        "projectPath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\YapYap.Core.csproj",
         "packagesPath": "C:\\Users\\lamam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lamam\\Desktop\\PRO\\PRO\\yapyap\\back\\YapYap.Core\\obj\\",
+        "outputPath": "C:\\Users\\lamam\\Documents\\PRO\\yapyap\\back\\YapYap.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
